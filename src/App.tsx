@@ -2,14 +2,23 @@ import type { Component } from "solid-js";
 
 import viteLogo from "/vite.svg";
 import solidLogo from "/solid.svg";
+import tsLogo from "/ts.svg";
 import "./App.css";
+import { Counter } from "#components/Counter";
 
 const App: Component = () => {
   return (
     <div class="App">
-      <header class="header">
-        <img src={viteLogo} class="logo" alt="Vite logo" />
-        <img src={solidLogo} class="logo" alt="Solid logo" />
+      <main>
+        <header>
+          <img src={viteLogo} class="logo vite" alt="Vite logo" />
+          <img src={solidLogo} class="logo solid" alt="Solid logo" />
+          <img src={tsLogo} class="logo typescript" alt="TypeScript logo" />
+        </header>
+        <h1>Vite + Solid + TS</h1>
+        <div class="card">
+          <Counter />
+        </div>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -21,7 +30,7 @@ const App: Component = () => {
         >
           Learn Solid
         </a>
-      </header>
+      </main>
     </div>
   );
 };

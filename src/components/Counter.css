@@ -1,0 +1,6 @@
+button.decrement {
+  margin-inline-end: 1em;
+}
+button.increment {
+  margin-inline-start: 1em;
+}
