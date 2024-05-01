@@ -1,15 +1,56 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "target": "ESNext",
+    // "target": "ESNext",
+    // "target": "ES2020", // Vite default
+    "target": "ES2022", // default from https://www.totaltypescript.com/tsconfig-cheat-sheet
     "module": "ESNext",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true, // default from https://www.totaltypescript.com/tsconfig-cheat-sheet
     "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // "moduleResolution": "node",
+    // "moduleResolution": "NodeNext", /* This is the recommended setting for libraries and Node.js applications */
+    "moduleResolution": "Bundler", // Vite default /* This is the recommended setting in TypeScript 5.0+ for applications that use a bundler */,
+    "sourceMap": true, // default from https://www.totaltypescript.com/tsconfig-cheat-sheet
+    // "allowImportingTsExtensions": true, // Vite default
+    "resolveJsonModule": true, // Vite default
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "types": ["vite/client"],
-    "noEmit": true,
-    "isolatedModules": true,
+
+    /* Linting - Strictness */
+    "strict": true,
+    "noUnusedLocals": true, // Vite default
+    "noUnusedParameters": true, // Vite default
+    "noFallthroughCasesInSwitch": true, // Vite default
+    "allowSyntheticDefaultImports": true, // Vite default
+    "noUncheckedIndexedAccess": true, // default from https://www.totaltypescript.com/tsconfig-cheat-sheet
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    // default from https://github.com/tsconfig/bases/blob/main/bases/strictest.json //
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // "types": ["vite/client"],
+
+    // /* If building for a library */
+    // "declaration": true,
+
+    /* Aliases and Import */
+    "resolvePackageJsonImports": true,
+    "paths": {},
+    "forceConsistentCasingInFileNames": true
   },
+
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
