@@ -1,0 +1,24 @@
+{
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  // "typescript.inlayHints.variableTypes.enabled": true,
+  // "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  // "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
