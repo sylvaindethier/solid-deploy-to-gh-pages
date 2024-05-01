@@ -26,7 +26,7 @@ jobs:
           BASE_PATH: /solid-deploy-to-gh-pages/
 
       - name: Create .nojekyll
-        run: touch .output/public/.nojekyll
+        run: touch dist/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.0
