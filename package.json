@@ -30,7 +30,7 @@
   "devDependencies": {
     "solid-devtools": "^0.30.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
+    "vite": "^6.4.2",
     "vite-plugin-solid": "^2.10.2"
   },
   "engines": {
